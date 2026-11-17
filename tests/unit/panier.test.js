@@ -15,4 +15,9 @@ test('ignore une ligne dont la quantité est 0', () => {
 const items = [{ prix: 10, qte: 0 }, { prix: 5, qte: 2 }];
 expect(total(items)).toBe(10);
 });
+test('refuse un prix négatif', () => {
+const items = [{ prix: -5, qte: 1 }];
+expect(() => total(items)).toThrow('Prix négatif');
+});
+
 });
