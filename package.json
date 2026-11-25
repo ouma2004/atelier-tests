@@ -12,9 +12,11 @@
     "test:cov": "jest --runInBand --coverage"
   },
   "jest": {
-    "testPathIgnorePatterns": ["/node_modules/", "/e2e/"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/e2e/"
+    ]
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
